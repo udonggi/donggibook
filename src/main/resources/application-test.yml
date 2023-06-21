@@ -1,9 +1,8 @@
 spring:
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:test;
-    username: sa
-    password:
+    url: jdbc:mysql://127.0.0.1:3306/donggibook__test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
+    username: lldj
+    password: lldj123414
   jpa:
     hibernate:
       ddl-auto: create

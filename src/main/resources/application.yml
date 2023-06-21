@@ -7,11 +7,8 @@ spring:
     exclude:
       - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
       - org.springframework.boot.autoconfigure.session.SessionAutoConfiguration
-  sql:
-    init:
-      mode: never
   datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   batch:
     job:
       name: ${job.name:NONE}
@@ -29,7 +26,7 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: dongki1882@gmail.com
+    username: jangka512@gmail.com
     password: NEED_TO_EMPTY
     properties:
       mail:
